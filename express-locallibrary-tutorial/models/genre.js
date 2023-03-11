@@ -3,14 +3,14 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const GenreSchema = new Schema({
-  genre: [{ type: Schema.Types.ObjectId, ref: "Genre" }],
+  name: { type: String, required: true, minLength: 3, maxLength: 100 },
 });
 
 // Virtual for book's URL
-BookSchema.virtual("url").get(function () {
+GenreSchema.virtual("url").get(function () {
   // We don't use an arrow function as we'll need the this object
-  return `/catalog/book/${this._id}`;
+  return `/catalog/genre/${this._id}`;
 });
 
 // Export model
-module.exports = mongoose.model("Book", BookSchema);
+module.exports = mongoose.model("Genre", GenreSchema);
