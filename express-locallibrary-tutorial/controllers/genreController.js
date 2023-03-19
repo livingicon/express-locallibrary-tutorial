@@ -17,6 +17,7 @@ exports.genre_list = (req, res) => {
       })
     })
 };
+
 // Display detail page for a specific Genre.
 exports.genre_detail = (req, res, next) => {
   async.parallel(
