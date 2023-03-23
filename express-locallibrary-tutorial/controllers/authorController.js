@@ -230,7 +230,7 @@ exports.author_update_post = [
     const errors = validationResult(req);
 
     // Create Author object with escaped and trimmed data (and the old id!)
-    var author = new Author({
+    const author = new Author({
       first_name: req.body.first_name,
       family_name: req.body.family_name,
       date_of_birth: req.body.date_of_birth,
@@ -242,6 +242,7 @@ exports.author_update_post = [
       // There are errors. Render the form again with sanitized values and error messages.
       res.render("author_form", {
         title: "Update Author",
+        // REVISE?_author: req.body,
         author: author,
         errors: errors.array(),
       });
