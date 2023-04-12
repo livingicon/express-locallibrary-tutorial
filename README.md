@@ -1,4 +1,4 @@
-![alt text](https://github.com/livingicon/express-locallibrary-tutorial/express-locallibrary-tutorial/blob/main/public/images/express-locallibrary-tutorial.png?raw=true)
+![alt text](https://github.com/livingicon/express-locallibrary-tutorial/blob/main/public/images/express-locallibrary-tutorial.png?raw=true)
 
 <h1>Express Local Library Tutorial</h1>
 
