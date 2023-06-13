@@ -19,7 +19,6 @@ const app = express();
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', false);
 
-// const dev_db_url = "mongodb+srv://admin:Im%40g0De%21@cluster0.ctv8dsf.mongodb.net/local_library?retryWrites=true&w=majority";
 const dev_db_url = env("DATABASE_URL");
 const mongoDB = process.env.MONGODB_URI || dev_db_url;
 
