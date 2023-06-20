@@ -1,5 +1,7 @@
+console.log('working?');
 // dotenv to hide my connection string
 require('dotenv').config();
+console.log(process.env.DB_CONN);
 // this along with const app = express creates the app
 // with the export at the bottom this is the bare bones:
 // const express = require("express");

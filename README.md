@@ -12,6 +12,8 @@
     cd mini-message-board
     npm install
     npm start
+    DEBUG=express-locallibrary-tutorial:* npm run devstart
+    navigate to http://localhost:3000/catalog
   </code>
 </pre>
 
